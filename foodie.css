@@ -37,6 +37,10 @@ overflow-x: scroll;
 overflow-y: hidden;
 white-space: nowrap;
 }
+.cards{
+  width: 90%;
+  margin: 0 auto;
+}
 
 .card {
 display: inline-block;
