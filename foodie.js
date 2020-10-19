@@ -87,7 +87,7 @@ getfoodsearch()
 function getfoodsearch(){
 
   var apiKey = "6c36802bf4294bc5a2072a56a71cf252";
-  baseURL = `https://api.spoonacular.com/recipes/complexSearch?query=${searchfieldvalue}&addRecipeInformation=true&addRecipeNutrition=true&apiKey=${apiKey}`
+  baseURL = `https://api.spoonacular.com/recipes/complexSearch?query=${searchfieldvalue}&addRecipeInformation=true&number=100&addRecipeNutrition=true&apiKey=${apiKey}`
   fetch(baseURL)
   .then((res)=> res.json())
   .then ((data)=>{
