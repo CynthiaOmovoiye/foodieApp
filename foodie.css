@@ -24,9 +24,13 @@ body {
 }
 
 .scrolling-wrapper{
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 3fr 9fr 50px;
   align-items: center;
+  grid-gap: 20px;
+  grid-template-areas: "search search filter"
+                        "scroll scroll scroll";
+                          
 }
 .card-cont {
 overflow-x: scroll;
@@ -49,12 +53,13 @@ border-radius: 50%;
 
 }
 .filter-box, .search-icon{
-padding: 1.5em;
+  padding: 1em;
 border-radius: 60% 0% 0% 61% / 51% 0% 0% 63% ;
 }
 .filter-box{
 background-color:  #f88e7c;
 color: #f9f9f9;
+height: 50px;
 }
 
 .container {
@@ -441,6 +446,15 @@ h2,
     grid-row-start: 2;
     grid-row-end: 3;
   }
+  .second_search{
+    grid-area: search;
+  }
+.filter-box{
+  grid-area: filter;
+}
+  .card-cont{
+    grid-area: scroll;
+  }
 }
 @media screen and (max-width: 430px) {
   .modal-content {
@@ -451,4 +465,5 @@ h2,
     width: 286px;
     height: 286px;
   }
+  
 }
