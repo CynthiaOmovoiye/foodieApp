@@ -191,6 +191,9 @@ nav .nav-menu ul li a {
 
 .food_tile:hover img {
   background-color: rgba(220, 230, 252, 0.85);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+ 
 }
 .food_tile span {
   display: block;
@@ -212,7 +215,11 @@ nav .nav-menu ul li a {
   margin-bottom: 18px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition:         transform .8s ease-in-out;
 }
+
+
 
 .food_name {
   font-size: 20px;
