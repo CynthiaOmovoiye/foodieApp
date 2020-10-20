@@ -72,13 +72,15 @@ generateCard(data.recipes);
 searchform2.addEventListener('submit', (e) =>{
     e.preventDefault();
     searchfieldvalue = searchfield2.value;
-    getfoodsearch()
+    getfoodsearch();
+    searchfield2.value ="";
     });
 
 searchform.addEventListener('submit', (e) =>{
 e.preventDefault();
 searchfieldvalue = searchfield.value;
-getfoodsearch()
+getfoodsearch();
+searchfield.value = "";
 });
 
 
